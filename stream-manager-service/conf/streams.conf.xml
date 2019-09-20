@@ -85,14 +85,14 @@
       </Parameter>
     </Filter>
     <!-- EnvironmentalClassifier -->
-    <Filter id="EnvironmentalClassifier">
+    <!--<Filter id="EnvironmentalClassifier">
       <Parameter name="Classpath">
         <![CDATA[gr.iti.mklab.sfc.filters.EnvironmentalClassifier]]>
       </Parameter>
       <Parameter name="threshold">
         <![CDATA[0.25]]>
       </Parameter>
-    </Filter>
+    </Filter> -->
 		<Filter id="SwearFilter">
       <Parameter name="Classpath">
         <![CDATA[gr.iti.mklab.sfc.filters.SwearItemFilter]]>
