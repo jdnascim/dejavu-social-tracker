@@ -1,0 +1,14 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+social-tracker-library = {git = "https://github.com/jdnascim/social-tracker-library.git"}
+flask = "*"
+flask-json = "*"
+
+[requires]
+python_version = "3.7"
