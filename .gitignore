@@ -1,0 +1,9 @@
+mongo_data_dir
+web-service
+stream-manager-service
+graylog
+solr-cores
+node_modules
+
+./package-lock.json
+./create_user.sh
