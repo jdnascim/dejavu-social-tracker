@@ -12,6 +12,7 @@ json: FlaskJSON = FlaskJSON(app)
 
 @app.route("/ds-api/collections/list_collections", methods=['GET'])
 def list_collections():
+    col.conf_json = "./conf.json"
     collections = col.list_collections(print_res=False)
 
     if collections is None:
