@@ -1,5 +1,4 @@
 FROM python:3.7-alpine AS base
-ARG service
 
 RUN mkdir home/app
 WORKDIR home/app
