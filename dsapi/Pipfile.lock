@@ -88,7 +88,7 @@
         },
         "social-tracker-library": {
             "git": "https://github.com/jdnascim/social-tracker-library.git",
-            "ref": "c24a6baf9ebd5c5069d6ba32ff2c35101dcb840e"
+            "ref": "fa1c38f8eebc6bba5be8d4c9c3398703d3ee620b"
         },
         "werkzeug": {
             "hashes": [

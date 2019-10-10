@@ -6,9 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-social-tracker-library = {git = "https://github.com/jdnascim/social-tracker-library.git"}
 flask = "*"
 flask-json = "*"
+social-tracker-library = {git = "https://github.com/jdnascim/social-tracker-library.git"}
 
 [requires]
 python_version = "3.7"
