@@ -9,8 +9,6 @@ COPY Pipfile.lock .
 COPY core/ ./core
 COPY api/ .
 
-RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
-
 # Necessary libraries to build psycopg2
 RUN apk update && apk upgrade
 RUN apk add postgresql-dev gcc python3-dev musl-dev
@@ -18,7 +16,7 @@ RUN apk add --no-cache bash git openssh
 RUN apk add --update --no-cache g++ gcc libxslt-dev
 RUN apk add libxml2
 RUN apk add libjpeg
-RUN apk --update add libffi-dev gcc musl-dev libgcc openssl-dev curl
+RUN apk --update add libffi-dev musl-dev libgcc openssl-dev curl
 RUN apk add jpeg-dev zlib-dev freetype-dev lcms2-dev openjpeg-dev tiff-dev tk-dev tcl-dev
 RUN apk add vim tmux
 
@@ -32,4 +30,5 @@ EXPOSE 5000
 ENV FLASK_APP /home/app/src/app.py
 # Add current dir to PYTHONPATH
 ENV PYTHONPATH "${PYTHONPATH}:/home/app"
+ENV PYTHONUNBUFFERED 1
 ENTRYPOINT pipenv run flask run --host=0.0.0.0 --port=5000
