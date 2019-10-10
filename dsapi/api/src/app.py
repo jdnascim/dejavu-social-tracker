@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask_json import FlaskJSON, as_json
+from flask_json import FlaskJSON
 from core.base_api import base_blueprint
 import json as j
 import os
@@ -31,7 +31,7 @@ def list_collections():
         return app.response_class(status=404, mimetype='application/json')
 
 
-@app.route("/dsapi/collection/extract_collection", methods=['POST'])
+@app.route("/dsapi/collections/extract_collection", methods=['POST'])
 def extract_collection():
     try:
         title = request.args.get("title")
