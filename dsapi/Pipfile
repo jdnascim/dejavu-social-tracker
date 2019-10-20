@@ -8,8 +8,10 @@ verify_ssl = true
 [packages]
 flask = "*"
 flask-json = "*"
-social-tracker-library = {git = "https://github.com/jdnascim/social-tracker-library.git"}
 ipython = "*"
+flask-restplus = "*"
+newspaper = {git = "https://github.com/jdnascim/newspaper.git"}
+social-tracker-library = {git = "https://github.com/jdnascim/social-tracker-library.git"}
 
 [requires]
 python_version = "3.7"
