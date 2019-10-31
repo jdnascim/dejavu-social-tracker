@@ -235,7 +235,7 @@
         },
         "social-tracker-library": {
             "git": "https://github.com/jdnascim/social-tracker-library.git",
-            "ref": "b28b04194a5183de51a5c55d07fb051934de8814"
+            "ref": "0111588e3317ef81258b365dc38766c820711a3b"
         },
         "traitlets": {
             "hashes": [
